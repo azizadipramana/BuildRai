@@ -2,8 +2,6 @@
 
 BuildRai CLI is a lightweight command-line tool for automating Docker operations, generating Dockerfiles, building and running images with custom tools, and managing containers efficiently.
 
----
-
 ## Features ✅
 
 - Generate Dockerfile automatically
@@ -11,8 +9,6 @@ BuildRai CLI is a lightweight command-line tool for automating Docker operations
 - Network tools included (ping, iptables, curl, wget, etc.)
 - Interactive CLI with colored prompt using `click`
 - Version 0.1.0
-
----
 
 ## Installation 🛠️
 
