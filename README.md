@@ -28,6 +28,9 @@ BuildRai CLI is a lightweight command-line tool for automating Docker operations
 ## Acknowledgements 🤖
 - AI-assisted generation for some CLI code and README content.
 
+## List Bug 
+- run - can not use properly because after type run will exit immediatly
+
 
 ### Clone repository
 
