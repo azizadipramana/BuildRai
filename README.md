@@ -1,6 +1,6 @@
-## Information Update 
+## Information Update (Nov 30 2025)
 
-Hello guys i the author of this project, after some consideration i choose to change from python to Node.js for this project. Because i new about Node.js, so i need to learn while to build this project, soon i hope this project will finish in the end of the year. Thank you 
+Hello guys i the author of this project, i just post the 2 basic folder that can used but still basic so is just some file that run and give output some word. 
 
 Author BuildRai
 
