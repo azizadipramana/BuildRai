@@ -3,7 +3,7 @@
     "version" : "0.1.0", 
     "description": "Generato Docker Image Automation", 
     "bin": {
-        "buildrai": "./bin/buildrai"
+        "buildrai": "/bin/buildrai"
     }, 
     "type": "module"
 }
