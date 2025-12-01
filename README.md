@@ -1,7 +1,7 @@
-## Information Update (Nov 30 2025)
+## Trouble
 
-Hello guys i the author of this project, i just post the 2 basic folder that can used but still basic so is just some file that run and give output some word. 
+Make different command for docker desktop and docker, because it is two different command. Docker dekstop command that focus on docker enggine on desktop and docker focus on container or image it self 
 
-Author BuildRai
+A. Docker Dekstop (docker desktop [command])
+B. Docker (docker [command]/ docker [command] [container] / etc...)
 
-Aziz Adi Pramana 

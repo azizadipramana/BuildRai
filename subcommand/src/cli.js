@@ -4,6 +4,13 @@ const command = argv[2];
 
 async function run(){
     switch (command){
+
+        // docker desktop command 
+
+
+
+        // docker command 
+
         case "open":
             (await import("./commands/open.js")).default(); 
             break; 
@@ -13,12 +20,18 @@ async function run(){
             break;
 
         case "list":
-            (await import("./commands/list.js")).default(); 
+            (await import("./commands/docker_restart.js")).default(); 
             break;
 
         case "push":
             (await import("./commands/push.js")).default(); 
             break;
+        
+        case "start":
+            (await import("./commands/start.js")).default(); 
+            
+
+
         
         case "help": 
         case undefined: 
@@ -36,6 +49,11 @@ function showHelp(){
         Usage: buildrai <command>
 
         Commands:
+        A. Docker Dekstop
+        docker start
+        docker 
+
+        B. Docker 
         push       Upload or push something
         list       Show list of items
         open       Open something
