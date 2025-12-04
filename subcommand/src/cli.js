@@ -7,30 +7,79 @@ async function run(){
 
         // docker desktop command 
 
+        case "desk logs":
+            (await import("./commands/docker_desktop/logs.js")).default(); 
+            break;
 
+        case "desk restart":
+            (await import("./commands/docker_desktop/restart.js")).default(); 
+            break;
+
+        case "desk start":
+            (await import("./commands/docker_desktop/start.js")).default(); 
+            break;
+
+        case "desk status":
+            (await import("./commands/docker_desktop/status.js")).default(); 
+            break;
+
+        case "desk stop":
+            (await import("./commands/docker_desktop/stop.js")).default(); 
+            break;
+
+        case "desk update":
+            (await import("./commands/docker_desktop/update.js")).default(); 
+            break;
+
+        case "desk version":
+            (await import("./commands/docker_desktop/version.js")).default(); 
+            break;
 
         // docker command 
 
-        case "open":
-            (await import("./commands/open.js")).default(); 
+        case "run":
+            (await import("./commands/docker/run")).default(); 
             break; 
         
-        case "close":
-            (await import("./commands/close.js")).default(); 
+        case "exec":
+            (await import("./commands/docker/exec.js")).default(); 
             break;
 
-        case "list":
-            (await import("./commands/docker_restart.js")).default(); 
+        case "ps":
+            (await import("./commands/docker/ps.js")).default(); 
             break;
 
-        case "push":
-            (await import("./commands/push.js")).default(); 
+        case "build":
+            (await import("./commands/docker/build.js")).default(); 
             break;
         
-        case "start":
-            (await import("./commands/start.js")).default(); 
+        case "bake":
+            (await import("./commands/docker/bake.js")).default(); 
             
-
+        case "pull":
+            (await import("./commands/docker/pull.js")).default(); 
+        
+        case "push":
+            (await import("./commands/docker/push.js")).default(); 
+        
+        case "images":
+            (await import("./commands/docker/images.js")).default(); 
+        
+        case "login":
+            (await import("./commands/docker/login.js")).default(); 
+        
+        case "logout":
+            (await import("./commands/docker/logout.js")).default(); 
+        
+        case "search":
+            (await import("./commands/docker/search.js")).default(); 
+        
+        case "version":
+            (await import("./commands/docker/version.js")).default(); 
+        
+        case "info":
+            (await import("./commands/docker/info.js")).default(); 
+        
 
         
         case "help": 
