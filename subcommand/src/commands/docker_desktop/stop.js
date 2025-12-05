@@ -1,9 +1,8 @@
 import { execCommand } from "../../utils/exec.js";
 
 export default async function(){
-    console.log("Stop docker dekstop");
     
-    const command = "docker dekstop stop"; 
+    const command = "docker desktop stop"; 
 
     try{
         execCommand(command); 

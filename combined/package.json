@@ -1,0 +1,9 @@
+{
+    "name": "buildrai", 
+    "version" : "0.1.0", 
+    "description": "Generato Docker Image Automation", 
+    "type": "module", 
+    "bin": {
+        "buildrai": "./bin/buildrai"
+    }
+}

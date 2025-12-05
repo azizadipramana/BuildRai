@@ -1,4 +1,4 @@
-import { execCommand } from "../utils/exec.js";
+import { execCommand } from "../../utils/exec.js";
 
 export default async function(){
     const command = "docker dekstop update"; 

@@ -34,7 +34,7 @@ rl.on("line", (line) => {
             return; 
         
         default: 
-            console.log('unknown command ${cmd} (type "help")'); 
+            console.log(`unknown command ${cmd} (type "help")`); 
     }        
 
 
