@@ -1,4 +1,4 @@
-import { execCommand } from "../utils/exec";
+import { execCommand } from "../../utils/exec.js";
 
 export default async function(){
     console.log("Stop docker dekstop");

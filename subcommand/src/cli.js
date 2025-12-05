@@ -1,44 +1,51 @@
 import { argv, stdin } from  "process"; 
 
 const command = argv[2]; 
+const sub = argv[3]; 
 
 async function run(){
     switch (command){
 
         // docker desktop command 
 
-        case "desk logs":
-            (await import("./commands/docker_desktop/logs.js")).default(); 
-            break;
+        case "desk":
+            switch(sub) {
+                case "logs":
+                    (await import("./commands/docker_desktop/logs.js")).default(); 
+                    break;
+        
+                case "restart":
+                    (await import("./commands/docker_desktop/restart.js")).default(); 
+                    break;
+        
+                case "start":
+                    (await import("./commands/docker_desktop/start.js")).default(); 
+                    break;
+        
+                case "status":
+                    (await import("./commands/docker_desktop/status.js")).default(); 
+                    break;
+        
+                case "stop":
+                    (await import("./commands/docker_desktop/stop.js")).default(); 
+                    break;
+        
+                case "update":
+                    (await import("./commands/docker_desktop/update.js")).default(); 
+                    break;
+        
+                case "version":
+                    (await import("./commands/docker_desktop/version.js")).default(); 
+                    break;
+            }
+            break; 
 
-        case "desk restart":
-            (await import("./commands/docker_desktop/restart.js")).default(); 
-            break;
-
-        case "desk start":
-            (await import("./commands/docker_desktop/start.js")).default(); 
-            break;
-
-        case "desk status":
-            (await import("./commands/docker_desktop/status.js")).default(); 
-            break;
-
-        case "desk stop":
-            (await import("./commands/docker_desktop/stop.js")).default(); 
-            break;
-
-        case "desk update":
-            (await import("./commands/docker_desktop/update.js")).default(); 
-            break;
-
-        case "desk version":
-            (await import("./commands/docker_desktop/version.js")).default(); 
-            break;
+    
 
         // docker command 
 
         case "run":
-            (await import("./commands/docker/run")).default(); 
+            (await import("./commands/docker/run.js")).default(); 
             break; 
         
         case "exec":
@@ -55,31 +62,39 @@ async function run(){
         
         case "bake":
             (await import("./commands/docker/bake.js")).default(); 
-            
+            break;
+
         case "pull":
             (await import("./commands/docker/pull.js")).default(); 
-        
+            break;
+
         case "push":
             (await import("./commands/docker/push.js")).default(); 
-        
+            break;
+
         case "images":
             (await import("./commands/docker/images.js")).default(); 
-        
+            break;
+
         case "login":
             (await import("./commands/docker/login.js")).default(); 
-        
+            break;
+
         case "logout":
             (await import("./commands/docker/logout.js")).default(); 
-        
+            break;
+
         case "search":
             (await import("./commands/docker/search.js")).default(); 
-        
+            break;
+
         case "version":
             (await import("./commands/docker/version.js")).default(); 
-        
+            break;
+
         case "info":
             (await import("./commands/docker/info.js")).default(); 
-        
+            break;
 
         
         case "help": 
@@ -88,7 +103,7 @@ async function run(){
             break; 
         
         default: 
-            console.log('unknown command: ${command}');
+            console.log(`unknown command: ${command}`);
             showHelp();  
     }
 }
