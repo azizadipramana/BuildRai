@@ -1,8 +1,7 @@
 import { execCommand } from "../../utils/exec.js"; 
 // import { spinner } from "../utils/spinner";
 
-export default async function(){
-    console.log("Starting Docker Desktop..."); 
+export default async function(){ 
 
     const command = "docker desktop start"; 
 

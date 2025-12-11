@@ -1,7 +1,7 @@
-import { execCommand } from "../../utils/exec";
+import { execCommand } from "../../utils/exec.js";
 
 export default async function(){
-    const command = "docker info"; 
+    const command = "docker version"; 
 
     try{
         await execCommand(command);

@@ -1,14 +1,23 @@
 import { argv, stdin } from  "process"; 
+import { runInteractive } from "./interactive.js"; 
 
-const command = argv[2]; 
-const sub = argv[3]; 
+
 
 async function run(){
+
+    const command = argv[2]; 
+    const sub = argv[3]; 
+
+    if(!command){
+        runInteractive(); 
+        return; 
+    }
+
     switch (command){
 
         // docker desktop command 
 
-        case "desk":
+        case "desktop":
             switch(sub) {
                 case "logs":
                     (await import("./commands/docker_desktop/logs.js")).default(); 
